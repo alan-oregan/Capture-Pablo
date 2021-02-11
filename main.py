@@ -1,4 +1,3 @@
-intro()
 import time # Adds time delay in seconds
     # time.sleep(2)
     # time.sleep(2)
