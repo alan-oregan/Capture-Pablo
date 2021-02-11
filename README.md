@@ -3,4 +3,4 @@ A text based action game based on Pablo Escobar  Made by: @alan_oregano &amp; @r
 <hr>
 It is a short multichoice in terminal game with colour!
 
-<link href="https://repl.it/@alan_oregano/Capture-Pablo#main.py"> Original Repl<link>
+<link href="https://repl.it/@alan_oregano/Capture-Pablo#main.py"> Original Repl </link>
