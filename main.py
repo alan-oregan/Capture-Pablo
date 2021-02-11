@@ -105,7 +105,7 @@ youAreLoyal = colored('''
 def enterContinue():
     input(colored('Press Enter to Continue', 'cyan', attrs=['blink']))
     clearScreen()
-	# replit.clear()
+    # replit.clear()
 
 # Options function
 def action(rep):
@@ -134,7 +134,7 @@ def action(rep):
     print('------------------------------------------------------------------')
     action = input(colored('Enter your choice [A/B/C]:', 'cyan'))
     print('------------------------------------------------------------------')
-	  # if the user iputs a lower or higher case A, B or C
+      # if the user iputs a lower or higher case A, B or C
     if action == "a" or action == "A":
       choice = "a"
       rep = 0
@@ -144,7 +144,7 @@ def action(rep):
     elif action == "c" or action == "C":
       choice = "c"
       rep = 0
-		# If the user inputs anything other than the options
+        # If the user inputs anything other than the options
     else:
       print(colored('Please only input either: a/A, b/B or c/C', 'cyan'))
       rep = 2
