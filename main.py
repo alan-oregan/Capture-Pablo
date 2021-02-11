@@ -6,12 +6,22 @@ import time # Adds time delay in seconds
     # time.sleep(4)
     # time.sleep(5)
 
-import replit # clears screen
-    # replit.clear()
 
 from termcolor import colored # Changes text colours
     # Available colors = ['pink', 'yellow', 'cyan', 'magenta', 'blue', 'gray', 'default', 'black', 'green', 'white', 'red']
     # print(colored('Hello, World!', 'red'))
+
+# to clear the screen
+class cls(object):
+    def __repr__(self):
+        import os
+        os.system('cls' if os.name == 'nt' else 'clear') # works on windows and linux
+        return ''
+cls = cls() # print(cls) to clear screen
+
+# easier to call than print
+def clearScreen():
+    print(cls, end="")
 
 # Defining variables
 enter = ''
@@ -34,74 +44,75 @@ OptionC = colored('Option C:', 'yellow')
 youDied = colored('''
 
 
-▓██   ██▓ ▒█████   █    ██    ▓█████▄  ██  █████ ▓█████▄ 
+▓██   ██▓ ▒█████   █    ██    ▓█████▄  ██  █████ ▓█████▄
  ▒██  ██  ██▒  ██▒ ██  ▓██▒   ▒██▀ ██▌ ██  █   ▀ ▒██▀ ██▌
   ▒██ ██ ▒██░  ██▒ ██  ▒██░   ░██   █▌ ██  ███   ░██   █▌
   ░ ▐██▓  ██   ██░ ▓█  ░██░   ░▓█▄   ▌ ██  ▓█  ▄ ░▓█▄   ▌
-  ░ ██▒▓   ████▓▒  ▒█████▓    ░▒████▓  ██  ▒████ ░▒████▓ 
-   ██▒▒▒ ░ ▒░▒░▒░  ▒▓▒ ▒ ▒     ▒▒▓  ▒  ▓  ░░ ▒░   ▒▒▓  ▒ 
- ▓██ ░▒░   ░ ▒ ▒░  ░▒░ ░ ░     ░ ▒  ▒  ▒ ░ ░ ░  ░ ░ ▒  ▒ 
- ▒ ▒ ░░  ░ ░ ░ ▒   ░░░ ░ ░     ░ ░  ░  ▒ ░   ░    ░ ░  ░ 
- ░ ░         ░ ░     ░           ░     ░     ░  ░   ░    
- ░ ░                           ░                  ░                                             
+  ░ ██▒▓   ████▓▒  ▒█████▓    ░▒████▓  ██  ▒████ ░▒████▓
+   ██▒▒▒ ░ ▒░▒░▒░  ▒▓▒ ▒ ▒     ▒▒▓  ▒  ▓  ░░ ▒░   ▒▒▓  ▒
+ ▓██ ░▒░   ░ ▒ ▒░  ░▒░ ░ ░     ░ ▒  ▒  ▒ ░ ░ ░  ░ ░ ▒  ▒
+ ▒ ▒ ░░  ░ ░ ░ ▒   ░░░ ░ ░     ░ ░  ░  ▒ ░   ░    ░ ░  ░
+ ░ ░         ░ ░     ░           ░     ░     ░  ░   ░
+ ░ ░                           ░                  ░
 ''', 'red')
 
 youAreRighteous = colored('''
 
-__   __              ___             ______ _       _     _                       
-\ \ / /             / _ \            | ___ (_)     | |   | |                      
- \ V /___  _   _   / /_\ \_ __ ___   | |_/ /_  __ _| |__ | |_ ___  ___  _   _ ___ 
+__   __              ___             ______ _       _     _
+\ \ / /             / _ \            | ___ (_)     | |   | |
+ \ V /___  _   _   / /_\ \_ __ ___   | |_/ /_  __ _| |__ | |_ ___  ___  _   _ ___
   \ // _ \| | | |  |  _  | '__/ _ \  |    /| |/ _` | '_ \| __/ _ \/ _ \| | | / __|
   | | (_) | |_| |  | | | | | |  __/  | |\ \| | (_| | | | | ||  __/ (_) | |_| \__ \
 
   \_/\___/ \__,_|  \_| |_/_|  \___|  \_| \_|_|\__, |_| |_|\__\___|\___/ \__,_|___/
-                                               __/ |                              
-                                              |___/                               
+                                               __/ |
+                                              |___/
 ''', 'blue')
 
 youAreATraitor = colored('''
 
-_____ ___                                                    __                 __  __                
-\__  |   | ____  __ __   _____  ______   ____    _____     _/  |_____________  |__|/  |_  ___________ 
+_____ ___                                                    __                 __  __
+\__  |   | ____  __ __   _____  ______   ____    _____     _/  |_____________  |__|/  |_  ___________
  /   |   |/  _ \|  |  \  \__  \ |  __ \_/ __ \   \__  \    \   __\_  __ \__  \ |  \   __\/  _ \_  __ \
- 
+
  \____   (  <_> )  |  /   / __ \|  | \/\  ___/    / __ \_   |  |  |  | \// __ \|  ||  | (  <_> )  | \/
- / ______|\____/|____/   (____  /__|    \___  >  (____  /   |__|  |__|  (____  /__||__|  \____/|__|   
- \/                           \/            \/        \/                     \/                       
+ / ______|\____/|____/   (____  /__|    \___  >  (____  /   |__|  |__|  (____  /__||__|  \____/|__|
+ \/                           \/            \/        \/                     \/
 ''', 'red')
 
 youAreSympathetic = colored('''
-__  __                 ___                   _____                             __  __         __  _     
+__  __                 ___                   _____                             __  __         __  _
 \ \/ /___  __  __     /   |  ________       / ___/__  ______ ___  ____  ____ _/ /_/ /_  ___  / /_(_)____
  \  / __ \/ / / /    / /| | / ___/ _ \      \__ \/ / / / __ `__ \/ __ \/ __ `/ __/ __ \/ _ \/ __/ / ___/
- / / /_/ / /_/ /    / ___ |/ /  /  __/     ___/ / /_/ / / / / / / /_/ / /_/ / /_/ / / /  __/ /_/ / /__  
-/_/\____/\__,_/    /_/  |_/_/   \___/     /____/\__, /_/ /_/ /_/ .___/\__,_/\__/_/ /_/\___/\__/_/\___/  
-                                               /____/         /_/                                       
+ / / /_/ / /_/ /    / ___ |/ /  /  __/     ___/ / /_/ / / / / / / /_/ / /_/ / /_/ / / /  __/ /_/ / /__
+/_/\____/\__,_/    /_/  |_/_/   \___/     /____/\__, /_/ /_/ /_/ .___/\__,_/\__/_/ /_/\___/\__/_/\___/
+                                               /____/         /_/
 ''', 'yellow')
 
 youAreLoyal = colored('''
 
- _                        _  
-| |                      | | 
-| |      ___  _   _ _____| | 
-| |     / _ \| | | (____ | | 
-| |____| |_| | |_| / ___ | | 
+ _                        _
+| |                      | |
+| |      ___  _   _ _____| |
+| |     / _ \| | | (____ | |
+| |____| |_| | |_| / ___ | |
 |_______)___/ \__  \_____|\_)
-             (____/          
+             (____/
 ''', 'green')
 
 # Defining functions
 # Breaks scenes and clears screen
 def enterContinue():
-	input(colored('Press Enter to Continue', 'cyan', attrs=['blink']))
-	replit.clear()
+    input(colored('Press Enter to Continue', 'cyan', attrs=['blink']))
+    clearScreen()
+	# replit.clear()
 
 # Options function
 def action(rep):
   # sets a global variable: choice
   global choice
   # For options A or B
-  while rep == 1:  
+  while rep == 1:
     # User input for options A and B
     print('------------------------------------------------------------------')
     action = input(colored('Enter your choice [A/B]: ', 'cyan'))
@@ -145,7 +156,8 @@ def action(rep):
 # Intro
 def intro():
     global yourName
-    replit.clear()
+    # replit.clear()
+    clearScreen()
     print('\nWelcome!')
     time.sleep(2)
     print('This is a Text-Based Adventure!')
@@ -164,7 +176,7 @@ def intro():
     time.sleep(1)
     enterContinue()
     return yourName
-    
+
 # Game Intro
 def gameIntro():
     global hotelRestaurant
@@ -237,7 +249,7 @@ def toilet():
     print('------------------------------------------------------------------\n')
     print(You, "Okay officer.\n")
     time.sleep(1)
-    print("You step out of the toilet and you walk towards Pablo\n")    
+    print("You step out of the toilet and you walk towards Pablo\n")
     if choice == "a":
         address()
     elif choice == "b":
@@ -298,7 +310,7 @@ def accept():
     print("* Pablo hands over his new business card to you *\n")
     time.sleep(2)
     print('------------------------------------------------------------------')
-    time.sleep(1)    
+    time.sleep(1)
     print(OptionA, "betray Pablo and give the address and the evidence of Pablo drug dealing to the police.")
     time.sleep(2)
     print(OptionB, "betray the police and get back into drug dealing along side Pablo.")
