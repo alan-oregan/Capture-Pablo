@@ -187,7 +187,7 @@ def gameIntro():
     time.sleep(3)
     print("However, Pablo Escobar hasn't been caught yet.")
     time.sleep(2)
-    print("Due to your involvment with Pablo, the police want you to help get evidence to put Pablo behind bars.")
+    print("Due to your involvement with Pablo, the police want you to help get evidence to put Pablo behind bars.")
     time.sleep(3)
     print("They have sent you to do a drug deal with him.")
     time.sleep(2)
@@ -257,7 +257,7 @@ def toilet():
 
 # toilet: Option A
 def address():
-    print(You, "Unfortuantely, I do not have the cash required at the moment. Can you give me your headquarters address? I will send you the cash when I get it.\n")
+    print(You, "Unfortunately, I do not have the cash required at the moment. Can you give me your headquarters address? I will send you the cash when I get it.\n")
     time.sleep(2)
     print(Pablo, "Hmmmmmmmmmmmmmmmmmmmmmmmmmm ... Unfortunately I cannot trust anyone with my address.\n")
     time.sleep(1)
