@@ -75,7 +75,7 @@ _____ ___                                                    __                 
  \/                           \/            \/        \/                     \/
 ''', 'red')
 
-youAreSympathetic = colored('''
+youAreSympatheticText = colored('''
 __  __                 ___                   _____                             __  __         __  _
 \ \/ /___  __  __     /   |  ________       / ___/__  ______ ___  ____  ____ _/ /_/ /_  ___  / /_(_)____
  \  / __ \/ / / /    / /| | / ___/ _ \      \__ \/ / / / __ `__ \/ __ \/ __ `/ __/ __ \/ _ \/ __/ / ___/
@@ -566,7 +566,7 @@ def youAreSympathetic():
     time.sleep(1)
     print("The following day you go to Pablo's funeral. You place both briefcases beside his grave to show your respect.\n")
     time.sleep(3)
-    print("You are sympathetic towards Pablo.", youAreSympathetic)
+    print("You are sympathetic towards Pablo.", youAreSympatheticText)
 
 # leave: option B
 def dontAttendFuneral():
