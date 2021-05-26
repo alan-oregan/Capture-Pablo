@@ -43,7 +43,6 @@ OptionC = colored('Option C:', 'yellow')
 # Defining image text
 youDied = colored('''
 
-
 ▓██   ██▓ ▒█████   █    ██    ▓█████▄  ██  █████ ▓█████▄
  ▒██  ██  ██▒  ██▒ ██  ▓██▒   ▒██▀ ██▌ ██  █   ▀ ▒██▀ ██▌
   ▒██ ██ ▒██░  ██▒ ██  ▒██░   ░██   █▌ ██  ███   ░██   █▌
@@ -57,30 +56,26 @@ youDied = colored('''
 ''', 'red')
 
 youAreRighteous = colored('''
-
 __   __              ___             ______ _       _     _
 \ \ / /             / _ \            | ___ (_)     | |   | |
  \ V /___  _   _   / /_\ \_ __ ___   | |_/ /_  __ _| |__ | |_ ___  ___  _   _ ___
   \ // _ \| | | |  |  _  | '__/ _ \  |    /| |/ _` | '_ \| __/ _ \/ _ \| | | / __|
-  | | (_) | |_| |  | | | | | |  __/  | |\ \| | (_| | | | | ||  __/ (_) | |_| \__ \
-
+  | | (_) | |_| |  | | | | | |  __/  | |\ \| | (_| | | | | ||  __/ (_) | |_| \__ \\
   \_/\___/ \__,_|  \_| |_/_|  \___|  \_| \_|_|\__, |_| |_|\__\___|\___/ \__,_|___/
                                                __/ |
                                               |___/
 ''', 'blue')
 
 youAreATraitor = colored('''
-
 _____ ___                                                    __                 __  __
 \__  |   | ____  __ __   _____  ______   ____    _____     _/  |_____________  |__|/  |_  ___________
- /   |   |/  _ \|  |  \  \__  \ |  __ \_/ __ \   \__  \    \   __\_  __ \__  \ |  \   __\/  _ \_  __ \
-
+ /   |   |/  _ \|  |  \  \__  \ |  __ \_/ __ \   \__  \    \   __\_  __ \__  \ |  \   __\/  _ \_  __ \\
  \____   (  <_> )  |  /   / __ \|  | \/\  ___/    / __ \_   |  |  |  | \// __ \|  ||  | (  <_> )  | \/
  / ______|\____/|____/   (____  /__|    \___  >  (____  /   |__|  |__|  (____  /__||__|  \____/|__|
  \/                           \/            \/        \/                     \/
 ''', 'red')
 
-youAreSympathetic = colored('''
+youAreSympatheticText = colored('''
 __  __                 ___                   _____                             __  __         __  _
 \ \/ /___  __  __     /   |  ________       / ___/__  ______ ___  ____  ____ _/ /_/ /_  ___  / /_(_)____
  \  / __ \/ / / /    / /| | / ___/ _ \      \__ \/ / / / __ `__ \/ __ \/ __ `/ __/ __ \/ _ \/ __/ / ___/
@@ -90,7 +85,6 @@ __  __                 ___                   _____                             _
 ''', 'yellow')
 
 youAreLoyal = colored('''
-
  _                        _
 | |                      | |
 | |      ___  _   _ _____| |
@@ -572,7 +566,7 @@ def youAreSympathetic():
     time.sleep(1)
     print("The following day you go to Pablo's funeral. You place both briefcases beside his grave to show your respect.\n")
     time.sleep(3)
-    print("You are sympathetic towards Pablo.", youAreSympathetic)
+    print("You are sympathetic towards Pablo.", youAreSympatheticText)
 
 # leave: option B
 def dontAttendFuneral():
